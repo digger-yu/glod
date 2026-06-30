@@ -5,7 +5,6 @@
   "unit_sdr": "亿SDR",
   "unit_gold_usd": "亿美元",
   "unit_gold_oz": "万盎司",
-  "last_updated": "2026-06-30",
   "source_urls": {
     "2018": "https://www.safe.gov.cn/safe/2018/0408/8785.html",
     "2019": "https://www.safe.gov.cn/safe/2019/0211/11348.html",
@@ -18,106 +17,915 @@
     "2026": "https://www.safe.gov.cn/safe/2026/0206/27116.html"
   },
   "data": [
-    {"date":"2018.01","foreign_exchange_sdr":21696.57,"imf_reserve_position_sdr":53.42,"sdr_sdr":77.21,"gold_usd":796.75,"gold_oz":5924,"other_reserves_sdr":3.51},
-    {"date":"2018.02","foreign_exchange_sdr":21678.61,"imf_reserve_position_sdr":53.27,"sdr_sdr":77.05,"gold_usd":780.64,"gold_oz":5924,"other_reserves_sdr":3.69},
-    {"date":"2018.03","foreign_exchange_sdr":21617.01,"imf_reserve_position_sdr":53.27,"sdr_sdr":77.17,"gold_usd":784.19,"gold_oz":5924,"other_reserves_sdr":0.96},
-    {"date":"2018.04","foreign_exchange_sdr":21729.59,"imf_reserve_position_sdr":53.12,"sdr_sdr":77.12,"gold_usd":777.88,"gold_oz":5924,"other_reserves_sdr":1.42},
-    {"date":"2018.05","foreign_exchange_sdr":21957.58,"imf_reserve_position_sdr":52.8,"sdr_sdr":76.8,"gold_usd":773.23,"gold_oz":5924,"other_reserves_sdr":3.59},
-    {"date":"2018.06","foreign_exchange_sdr":22125.62,"imf_reserve_position_sdr":60.62,"sdr_sdr":77.21,"gold_usd":740.71,"gold_oz":5924,"other_reserves_sdr":3.8},
-    {"date":"2018.07","foreign_exchange_sdr":22193.89,"imf_reserve_position_sdr":60.29,"sdr_sdr":77.32,"gold_usd":723.24,"gold_oz":5924,"other_reserves_sdr":3.14},
-    {"date":"2018.08","foreign_exchange_sdr":22190.25,"imf_reserve_position_sdr":61.0,"sdr_sdr":77.49,"gold_usd":712.28,"gold_oz":5924,"other_reserves_sdr":1.94},
-    {"date":"2018.09","foreign_exchange_sdr":22125.23,"imf_reserve_position_sdr":61.0,"sdr_sdr":77.5,"gold_usd":703.27,"gold_oz":5924,"other_reserves_sdr":2.94},
-    {"date":"2018.10","foreign_exchange_sdr":22089.86,"imf_reserve_position_sdr":63.86,"sdr_sdr":76.44,"gold_usd":719.68,"gold_oz":5924,"other_reserves_sdr":3.56},
-    {"date":"2018.11","foreign_exchange_sdr":22134.48,"imf_reserve_position_sdr":63.18,"sdr_sdr":76.69,"gold_usd":721.22,"gold_oz":5924,"other_reserves_sdr":-0.8},
-    {"date":"2018.12","foreign_exchange_sdr":22093.26,"imf_reserve_position_sdr":60.97,"sdr_sdr":76.86,"gold_usd":763.31,"gold_oz":5956,"other_reserves_sdr":-1.58},
-    {"date":"2019.01","foreign_exchange_sdr":22045.61,"imf_reserve_position_sdr":60.58,"sdr_sdr":77.01,"gold_usd":793.19,"gold_oz":5994,"other_reserves_sdr":-1.16},
-    {"date":"2019.02","foreign_exchange_sdr":22104.67,"imf_reserve_position_sdr":60.58,"sdr_sdr":77.21,"gold_usd":794.98,"gold_oz":6026,"other_reserves_sdr":-1.1},
-    {"date":"2019.03","foreign_exchange_sdr":22321.33,"imf_reserve_position_sdr":60.58,"sdr_sdr":77.23,"gold_usd":785.25,"gold_oz":6062,"other_reserves_sdr":-2.16},
-    {"date":"2019.04","foreign_exchange_sdr":22333.98,"imf_reserve_position_sdr":60.23,"sdr_sdr":77.27,"gold_usd":783.49,"gold_oz":6110,"other_reserves_sdr":0.76},
-    {"date":"2019.05","foreign_exchange_sdr":22509.88,"imf_reserve_position_sdr":60.12,"sdr_sdr":77.54,"gold_usd":798.25,"gold_oz":6161,"other_reserves_sdr":0.11},
-    {"date":"2019.06","foreign_exchange_sdr":22437.12,"imf_reserve_position_sdr":59.22,"sdr_sdr":77.77,"gold_usd":872.68,"gold_oz":6194,"other_reserves_sdr":-2.24},
-    {"date":"2019.07","foreign_exchange_sdr":22565.49,"imf_reserve_position_sdr":62.08,"sdr_sdr":78.88,"gold_usd":888.76,"gold_oz":6226,"other_reserves_sdr":-3.38},
-    {"date":"2019.08","foreign_exchange_sdr":22707.64,"imf_reserve_position_sdr":61.73,"sdr_sdr":79.09,"gold_usd":954.5,"gold_oz":6245,"other_reserves_sdr":-2.89},
-    {"date":"2019.09","foreign_exchange_sdr":22683.32,"imf_reserve_position_sdr":61.73,"sdr_sdr":79.11,"gold_usd":930.45,"gold_oz":6264,"other_reserves_sdr":-1.65},
-    {"date":"2019.10","foreign_exchange_sdr":22511.11,"imf_reserve_position_sdr":61.66,"sdr_sdr":79.14,"gold_usd":946.51,"gold_oz":6264,"other_reserves_sdr":-0.79},
-    {"date":"2019.11","foreign_exchange_sdr":22547.82,"imf_reserve_position_sdr":61.66,"sdr_sdr":79.38,"gold_usd":914.69,"gold_oz":6264,"other_reserves_sdr":-1.17},
-    {"date":"2019.12","foreign_exchange_sdr":22475.17,"imf_reserve_position_sdr":61.06,"sdr_sdr":80.46,"gold_usd":954.06,"gold_oz":6264,"other_reserves_sdr":0.24},
-    {"date":"2020.01","foreign_exchange_sdr":22626.05,"imf_reserve_position_sdr":60.82,"sdr_sdr":80.58,"gold_usd":992.4,"gold_oz":6264,"other_reserves_sdr":0.08},
-    {"date":"2020.02","foreign_exchange_sdr":22622.59,"imf_reserve_position_sdr":59.13,"sdr_sdr":80.73,"gold_usd":1008.47,"gold_oz":6264,"other_reserves_sdr":-0.73},
-    {"date":"2020.03","foreign_exchange_sdr":22425.53,"imf_reserve_position_sdr":59.13,"sdr_sdr":80.74,"gold_usd":1007.9,"gold_oz":6264,"other_reserves_sdr":-1.74},
-    {"date":"2020.04","foreign_exchange_sdr":22624.81,"imf_reserve_position_sdr":66.13,"sdr_sdr":79.13,"gold_usd":1066.66,"gold_oz":6264,"other_reserves_sdr":-0.25},
-    {"date":"2020.05","foreign_exchange_sdr":22606.78,"imf_reserve_position_sdr":66.13,"sdr_sdr":79.26,"gold_usd":1082.92,"gold_oz":6264,"other_reserves_sdr":-0.37},
-    {"date":"2020.06","foreign_exchange_sdr":22623.67,"imf_reserve_position_sdr":69.86,"sdr_sdr":79.63,"gold_usd":1107.6,"gold_oz":6264,"other_reserves_sdr":-2.37},
-    {"date":"2020.07","foreign_exchange_sdr":22322.99,"imf_reserve_position_sdr":69.86,"sdr_sdr":79.74,"gold_usd":1230.88,"gold_oz":6264,"other_reserves_sdr":-2.8},
-    {"date":"2020.08","foreign_exchange_sdr":22303.06,"imf_reserve_position_sdr":69.17,"sdr_sdr":79.77,"gold_usd":1226.15,"gold_oz":6264,"other_reserves_sdr":-2.91},
-    {"date":"2020.09","foreign_exchange_sdr":22326.08,"imf_reserve_position_sdr":68.75,"sdr_sdr":79.34,"gold_usd":1182.02,"gold_oz":6264,"other_reserves_sdr":-2.83},
-    {"date":"2020.10","foreign_exchange_sdr":22158.5,"imf_reserve_position_sdr":68.74,"sdr_sdr":79.38,"gold_usd":1178.86,"gold_oz":6264,"other_reserves_sdr":-3.48},
-    {"date":"2020.11","foreign_exchange_sdr":22225.75,"imf_reserve_position_sdr":68.74,"sdr_sdr":79.47,"gold_usd":1104.12,"gold_oz":6264,"other_reserves_sdr":-3.3},
-    {"date":"2020.12","foreign_exchange_sdr":22332.79,"imf_reserve_position_sdr":74.74,"sdr_sdr":79.81,"gold_usd":1182.46,"gold_oz":6264,"other_reserves_sdr":-3.46},
-    {"date":"2021.01","foreign_exchange_sdr":22283.92,"imf_reserve_position_sdr":74.74,"sdr_sdr":79.88,"gold_usd":1167.55,"gold_oz":6264,"other_reserves_sdr":-2.77},
-    {"date":"2021.02","foreign_exchange_sdr":22268.17,"imf_reserve_position_sdr":74.7,"sdr_sdr":79.9,"gold_usd":1091.78,"gold_oz":6264,"other_reserves_sdr":-2.83},
-    {"date":"2021.03","foreign_exchange_sdr":22368.14,"imf_reserve_position_sdr":72.49,"sdr_sdr":79.97,"gold_usd":1059.33,"gold_oz":6264,"other_reserves_sdr":-3.34},
-    {"date":"2021.04","foreign_exchange_sdr":22271.65,"imf_reserve_position_sdr":72.49,"sdr_sdr":79.55,"gold_usd":1107.32,"gold_oz":6264,"other_reserves_sdr":-2.36},
-    {"date":"2021.05","foreign_exchange_sdr":22301.35,"imf_reserve_position_sdr":72.49,"sdr_sdr":79.63,"gold_usd":1190.2,"gold_oz":6264,"other_reserves_sdr":-2.26},
-    {"date":"2021.06","foreign_exchange_sdr":22531.95,"imf_reserve_position_sdr":72.24,"sdr_sdr":79.99,"gold_usd":1104.5,"gold_oz":6264,"other_reserves_sdr":-1.94},
-    {"date":"2021.07","foreign_exchange_sdr":22648.06,"imf_reserve_position_sdr":72.24,"sdr_sdr":80.11,"gold_usd":1143.72,"gold_oz":6264,"other_reserves_sdr":-2.95},
-    {"date":"2021.08","foreign_exchange_sdr":22693.36,"imf_reserve_position_sdr":72.19,"sdr_sdr":371.52,"gold_usd":1136.89,"gold_oz":6264,"other_reserves_sdr":-1.86},
-    {"date":"2021.09","foreign_exchange_sdr":22717.66,"imf_reserve_position_sdr":71.69,"sdr_sdr":378.59,"gold_usd":1091.75,"gold_oz":6264,"other_reserves_sdr":-1.58},
-    {"date":"2021.10","foreign_exchange_sdr":22733.22,"imf_reserve_position_sdr":74.37,"sdr_sdr":378.67,"gold_usd":1108.26,"gold_oz":6264,"other_reserves_sdr":-2.35},
-    {"date":"2021.11","foreign_exchange_sdr":23003.97,"imf_reserve_position_sdr":76.37,"sdr_sdr":378.76,"gold_usd":1130.34,"gold_oz":6264,"other_reserves_sdr":-1.76},
-    {"date":"2021.12","foreign_exchange_sdr":23222.21,"imf_reserve_position_sdr":76.37,"sdr_sdr":379.15,"gold_usd":1131.25,"gold_oz":6264,"other_reserves_sdr":-0.98},
-    {"date":"2022.01","foreign_exchange_sdr":23147.52,"imf_reserve_position_sdr":76.37,"sdr_sdr":384.46,"gold_usd":1124.61,"gold_oz":6264,"other_reserves_sdr":0.07},
-    {"date":"2022.02","foreign_exchange_sdr":23040.44,"imf_reserve_position_sdr":76.33,"sdr_sdr":384.49,"gold_usd":1196.4,"gold_oz":6264,"other_reserves_sdr":-2.52},
-    {"date":"2022.03","foreign_exchange_sdr":23061.31,"imf_reserve_position_sdr":75.75,"sdr_sdr":384.55,"gold_usd":1216.63,"gold_oz":6264,"other_reserves_sdr":-0.94},
-    {"date":"2022.04","foreign_exchange_sdr":23206.97,"imf_reserve_position_sdr":74.75,"sdr_sdr":388.83,"gold_usd":1197.31,"gold_oz":6264,"other_reserves_sdr":-4.27},
-    {"date":"2022.05","foreign_exchange_sdr":23173.88,"imf_reserve_position_sdr":75.02,"sdr_sdr":388.96,"gold_usd":1151.83,"gold_oz":6264,"other_reserves_sdr":-1.25},
-    {"date":"2022.06","foreign_exchange_sdr":23130.86,"imf_reserve_position_sdr":75.03,"sdr_sdr":391.28,"gold_usd":1138.23,"gold_oz":6264,"other_reserves_sdr":-3.14},
-    {"date":"2022.07","foreign_exchange_sdr":23451.75,"imf_reserve_position_sdr":76.4,"sdr_sdr":391.44,"gold_usd":1098.39,"gold_oz":6264,"other_reserves_sdr":-2.59},
-    {"date":"2022.08","foreign_exchange_sdr":23474.81,"imf_reserve_position_sdr":78.14,"sdr_sdr":394.15,"gold_usd":1074.9,"gold_oz":6264,"other_reserves_sdr":-0.55},
-    {"date":"2022.09","foreign_exchange_sdr":23665.93,"imf_reserve_position_sdr":77.79,"sdr_sdr":394.21,"gold_usd":1047.24,"gold_oz":6264,"other_reserves_sdr":-4.0},
-    {"date":"2022.10","foreign_exchange_sdr":23785.88,"imf_reserve_position_sdr":81.44,"sdr_sdr":392.27,"gold_usd":1026.73,"gold_oz":6264,"other_reserves_sdr":-3.71},
-    {"date":"2022.11","foreign_exchange_sdr":23709.99,"imf_reserve_position_sdr":81.44,"sdr_sdr":384.17,"gold_usd":1116.5,"gold_oz":6367,"other_reserves_sdr":-3.24},
-    {"date":"2022.12","foreign_exchange_sdr":23501.56,"imf_reserve_position_sdr":81.44,"sdr_sdr":384.41,"gold_usd":1172.35,"gold_oz":6464,"other_reserves_sdr":-2.97},
-    {"date":"2023.01","foreign_exchange_sdr":23615.4,"imf_reserve_position_sdr":81.44,"sdr_sdr":385.41,"gold_usd":1252.83,"gold_oz":6512,"other_reserves_sdr":-1.51},
-    {"date":"2023.02","foreign_exchange_sdr":23579.08,"imf_reserve_position_sdr":81.44,"sdr_sdr":388.49,"gold_usd":1202.83,"gold_oz":6592,"other_reserves_sdr":0.24},
-    {"date":"2023.03","foreign_exchange_sdr":23667.85,"imf_reserve_position_sdr":81.14,"sdr_sdr":390.04,"gold_usd":1316.53,"gold_oz":6650,"other_reserves_sdr":0.68},
-    {"date":"2023.04","foreign_exchange_sdr":23791.73,"imf_reserve_position_sdr":81.16,"sdr_sdr":390.06,"gold_usd":1323.53,"gold_oz":6676,"other_reserves_sdr":1.4},
-    {"date":"2023.05","foreign_exchange_sdr":23929.14,"imf_reserve_position_sdr":81.15,"sdr_sdr":391.51,"gold_usd":1321.52,"gold_oz":6727,"other_reserves_sdr":3.15},
-    {"date":"2023.06","foreign_exchange_sdr":24006.17,"imf_reserve_position_sdr":72.94,"sdr_sdr":391.81,"gold_usd":1299.34,"gold_oz":6795,"other_reserves_sdr":0.79},
-    {"date":"2023.07","foreign_exchange_sdr":23860.18,"imf_reserve_position_sdr":60.47,"sdr_sdr":393.71,"gold_usd":1353.6,"gold_oz":6869,"other_reserves_sdr":0.75},
-    {"date":"2023.08","foreign_exchange_sdr":23761.19,"imf_reserve_position_sdr":72.91,"sdr_sdr":397.97,"gold_usd":1352.24,"gold_oz":6962,"other_reserves_sdr":-0.5},
-    {"date":"2023.09","foreign_exchange_sdr":23689.17,"imf_reserve_position_sdr":72.91,"sdr_sdr":398.03,"gold_usd":1317.88,"gold_oz":7046,"other_reserves_sdr":-2.45},
-    {"date":"2023.10","foreign_exchange_sdr":23598.95,"imf_reserve_position_sdr":72.91,"sdr_sdr":398.09,"gold_usd":1421.71,"gold_oz":7120,"other_reserves_sdr":-1.68},
-    {"date":"2023.11","foreign_exchange_sdr":23789.41,"imf_reserve_position_sdr":72.65,"sdr_sdr":399.28,"gold_usd":1457.01,"gold_oz":7158,"other_reserves_sdr":-0.14},
-    {"date":"2023.12","foreign_exchange_sdr":24133.94,"imf_reserve_position_sdr":72.65,"sdr_sdr":399.47,"gold_usd":1482.26,"gold_oz":7187,"other_reserves_sdr":1.08},
-    {"date":"2024.01","foreign_exchange_sdr":24207.52,"imf_reserve_position_sdr":74.36,"sdr_sdr":400.76,"gold_usd":1482.29,"gold_oz":7219,"other_reserves_sdr":2.53},
-    {"date":"2024.02","foreign_exchange_sdr":24298.76,"imf_reserve_position_sdr":74.36,"sdr_sdr":402.01,"gold_usd":1486.44,"gold_oz":7258,"other_reserves_sdr":-1.46},
-    {"date":"2024.03","foreign_exchange_sdr":24513.12,"imf_reserve_position_sdr":74.36,"sdr_sdr":401.82,"gold_usd":1610.69,"gold_oz":7274,"other_reserves_sdr":-2.55},
-    {"date":"2024.04","foreign_exchange_sdr":24286.82,"imf_reserve_position_sdr":74.12,"sdr_sdr":402.68,"gold_usd":1679.57,"gold_oz":7280,"other_reserves_sdr":-5.57},
-    {"date":"2024.05","foreign_exchange_sdr":24419.67,"imf_reserve_position_sdr":74.13,"sdr_sdr":404.02,"gold_usd":1709.6,"gold_oz":7280,"other_reserves_sdr":-6.76},
-    {"date":"2024.06","foreign_exchange_sdr":24498.2,"imf_reserve_position_sdr":74.13,"sdr_sdr":404.18,"gold_usd":1696.97,"gold_oz":7280,"other_reserves_sdr":-8.48},
-    {"date":"2024.07","foreign_exchange_sdr":24513.09,"imf_reserve_position_sdr":74.13,"sdr_sdr":403.86,"gold_usd":1766.42,"gold_oz":7280,"other_reserves_sdr":-8.84},
-    {"date":"2024.08","foreign_exchange_sdr":24418.55,"imf_reserve_position_sdr":74.13,"sdr_sdr":406.37,"gold_usd":1829.8,"gold_oz":7280,"other_reserves_sdr":-6.7},
-    {"date":"2024.09","foreign_exchange_sdr":24450.28,"imf_reserve_position_sdr":74.82,"sdr_sdr":404.49,"gold_usd":1914.69,"gold_oz":7280,"other_reserves_sdr":-7.71},
-    {"date":"2024.10","foreign_exchange_sdr":24489.08,"imf_reserve_position_sdr":74.83,"sdr_sdr":404.47,"gold_usd":1990.55,"gold_oz":7280,"other_reserves_sdr":-10.5},
-    {"date":"2024.11","foreign_exchange_sdr":24856.07,"imf_reserve_position_sdr":74.83,"sdr_sdr":405.68,"gold_usd":1934.31,"gold_oz":7296,"other_reserves_sdr":-5.97},
-    {"date":"2024.12","foreign_exchange_sdr":24555.42,"imf_reserve_position_sdr":74.82,"sdr_sdr":404.01,"gold_usd":1913.37,"gold_oz":7329,"other_reserves_sdr":-4.46},
-    {"date":"2025.01","foreign_exchange_sdr":24612.47,"imf_reserve_position_sdr":77.07,"sdr_sdr":404.29,"gold_usd":2065.34,"gold_oz":7345,"other_reserves_sdr":-2.48},
-    {"date":"2025.02","foreign_exchange_sdr":24654.06,"imf_reserve_position_sdr":77.06,"sdr_sdr":405.48,"gold_usd":2086.43,"gold_oz":7361,"other_reserves_sdr":-3.61},
-    {"date":"2025.03","foreign_exchange_sdr":24389.83,"imf_reserve_position_sdr":76.1,"sdr_sdr":405.53,"gold_usd":2295.94,"gold_oz":7370,"other_reserves_sdr":-2.71},
-    {"date":"2025.04","foreign_exchange_sdr":24199.01,"imf_reserve_position_sdr":82.48,"sdr_sdr":405.95,"gold_usd":2435.85,"gold_oz":7377,"other_reserves_sdr":-1.16},
-    {"date":"2025.05","foreign_exchange_sdr":24214.89,"imf_reserve_position_sdr":83.31,"sdr_sdr":407.0,"gold_usd":2419.88,"gold_oz":7383,"other_reserves_sdr":-2.21},
-    {"date":"2025.06","foreign_exchange_sdr":24144.2,"imf_reserve_position_sdr":82.14,"sdr_sdr":407.06,"gold_usd":2429.31,"gold_oz":7390,"other_reserves_sdr":-3.55},
-    {"date":"2025.07","foreign_exchange_sdr":24298.54,"imf_reserve_position_sdr":80.65,"sdr_sdr":407.92,"gold_usd":2439.85,"gold_oz":7396,"other_reserves_sdr":-2.56},
-    {"date":"2025.08","foreign_exchange_sdr":24273.35,"imf_reserve_position_sdr":82.86,"sdr_sdr":409.26,"gold_usd":2538.43,"gold_oz":7402,"other_reserves_sdr":-1.47},
-    {"date":"2025.09","foreign_exchange_sdr":24352.47,"imf_reserve_position_sdr":81.91,"sdr_sdr":409.3,"gold_usd":2832.91,"gold_oz":7406,"other_reserves_sdr":-2.57},
-    {"date":"2025.10","foreign_exchange_sdr":24612.45,"imf_reserve_position_sdr":81.4,"sdr_sdr":409.03,"gold_usd":2972.09,"gold_oz":7409,"other_reserves_sdr":-2.41},
-    {"date":"2025.11","foreign_exchange_sdr":24631.64,"imf_reserve_position_sdr":81.4,"sdr_sdr":410.11,"gold_usd":3106.47,"gold_oz":7412,"other_reserves_sdr":-1.05},
-    {"date":"2025.12","foreign_exchange_sdr":24518.89,"imf_reserve_position_sdr":81.63,"sdr_sdr":407.62,"gold_usd":3194.5,"gold_oz":7415,"other_reserves_sdr":-0.11},
-    {"date":"2026.01","foreign_exchange_sdr":24597.67,"imf_reserve_position_sdr":81.04,"sdr_sdr":406.94,"gold_usd":3695.82,"gold_oz":7419,"other_reserves_sdr":1.37},
-    {"date":"2026.02","foreign_exchange_sdr":24933.77,"imf_reserve_position_sdr":81.03,"sdr_sdr":408.02,"gold_usd":3875.88,"gold_oz":7422,"other_reserves_sdr":0.47},
-    {"date":"2026.03","foreign_exchange_sdr":24639.84,"imf_reserve_position_sdr":80.38,"sdr_sdr":408.02,"gold_usd":3427.63,"gold_oz":7438,"other_reserves_sdr":-0.07},
-    {"date":"2026.04","foreign_exchange_sdr":24857.91,"imf_reserve_position_sdr":79.72,"sdr_sdr":408.4,"gold_usd":3441.72,"gold_oz":7464,"other_reserves_sdr":0.2},
-    {"date":"2026.05","foreign_exchange_sdr":25148.72,"imf_reserve_position_sdr":81.72,"sdr_sdr":409.38,"gold_usd":3407.52,"gold_oz":7496,"other_reserves_sdr":2.75}
-  ]
+    {
+      "date": "2018.01",
+      "foreign_exchange_sdr": 21696.57,
+      "imf_reserve_position_sdr": 53.42,
+      "sdr_sdr": 77.21,
+      "gold_usd": 796.75,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.51
+    },
+    {
+      "date": "2018.02",
+      "foreign_exchange_sdr": 21678.61,
+      "imf_reserve_position_sdr": 53.27,
+      "sdr_sdr": 77.05,
+      "gold_usd": 780.64,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.69
+    },
+    {
+      "date": "2018.03",
+      "foreign_exchange_sdr": 21617.01,
+      "imf_reserve_position_sdr": 53.27,
+      "sdr_sdr": 77.17,
+      "gold_usd": 784.19,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 0.96
+    },
+    {
+      "date": "2018.04",
+      "foreign_exchange_sdr": 21729.59,
+      "imf_reserve_position_sdr": 53.12,
+      "sdr_sdr": 77.12,
+      "gold_usd": 777.88,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 1.42
+    },
+    {
+      "date": "2018.05",
+      "foreign_exchange_sdr": 21957.58,
+      "imf_reserve_position_sdr": 52.8,
+      "sdr_sdr": 76.8,
+      "gold_usd": 773.23,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.59
+    },
+    {
+      "date": "2018.06",
+      "foreign_exchange_sdr": 22125.62,
+      "imf_reserve_position_sdr": 60.62,
+      "sdr_sdr": 77.21,
+      "gold_usd": 740.71,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.8
+    },
+    {
+      "date": "2018.07",
+      "foreign_exchange_sdr": 22193.89,
+      "imf_reserve_position_sdr": 60.29,
+      "sdr_sdr": 77.32,
+      "gold_usd": 723.24,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.14
+    },
+    {
+      "date": "2018.08",
+      "foreign_exchange_sdr": 22190.25,
+      "imf_reserve_position_sdr": 61.0,
+      "sdr_sdr": 77.49,
+      "gold_usd": 712.28,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 1.94
+    },
+    {
+      "date": "2018.09",
+      "foreign_exchange_sdr": 22125.23,
+      "imf_reserve_position_sdr": 61.0,
+      "sdr_sdr": 77.5,
+      "gold_usd": 703.27,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 2.94
+    },
+    {
+      "date": "2018.10",
+      "foreign_exchange_sdr": 22089.86,
+      "imf_reserve_position_sdr": 63.86,
+      "sdr_sdr": 76.44,
+      "gold_usd": 719.68,
+      "gold_oz": 5924,
+      "other_reserves_sdr": 3.56
+    },
+    {
+      "date": "2018.11",
+      "foreign_exchange_sdr": 22134.48,
+      "imf_reserve_position_sdr": 63.18,
+      "sdr_sdr": 76.69,
+      "gold_usd": 721.22,
+      "gold_oz": 5924,
+      "other_reserves_sdr": -0.8
+    },
+    {
+      "date": "2018.12",
+      "foreign_exchange_sdr": 22093.26,
+      "imf_reserve_position_sdr": 60.97,
+      "sdr_sdr": 76.86,
+      "gold_usd": 763.31,
+      "gold_oz": 5956,
+      "other_reserves_sdr": -1.58
+    },
+    {
+      "date": "2019.01",
+      "foreign_exchange_sdr": 22045.61,
+      "imf_reserve_position_sdr": 60.58,
+      "sdr_sdr": 77.01,
+      "gold_usd": 793.19,
+      "gold_oz": 5994,
+      "other_reserves_sdr": -1.16
+    },
+    {
+      "date": "2019.02",
+      "foreign_exchange_sdr": 22104.67,
+      "imf_reserve_position_sdr": 60.58,
+      "sdr_sdr": 77.21,
+      "gold_usd": 794.98,
+      "gold_oz": 6026,
+      "other_reserves_sdr": -1.1
+    },
+    {
+      "date": "2019.03",
+      "foreign_exchange_sdr": 22321.33,
+      "imf_reserve_position_sdr": 60.58,
+      "sdr_sdr": 77.23,
+      "gold_usd": 785.25,
+      "gold_oz": 6062,
+      "other_reserves_sdr": -2.16
+    },
+    {
+      "date": "2019.04",
+      "foreign_exchange_sdr": 22333.98,
+      "imf_reserve_position_sdr": 60.23,
+      "sdr_sdr": 77.27,
+      "gold_usd": 783.49,
+      "gold_oz": 6110,
+      "other_reserves_sdr": 0.76
+    },
+    {
+      "date": "2019.05",
+      "foreign_exchange_sdr": 22509.88,
+      "imf_reserve_position_sdr": 60.12,
+      "sdr_sdr": 77.54,
+      "gold_usd": 798.25,
+      "gold_oz": 6161,
+      "other_reserves_sdr": 0.11
+    },
+    {
+      "date": "2019.06",
+      "foreign_exchange_sdr": 22437.12,
+      "imf_reserve_position_sdr": 59.22,
+      "sdr_sdr": 77.77,
+      "gold_usd": 872.68,
+      "gold_oz": 6194,
+      "other_reserves_sdr": -2.24
+    },
+    {
+      "date": "2019.07",
+      "foreign_exchange_sdr": 22565.49,
+      "imf_reserve_position_sdr": 62.08,
+      "sdr_sdr": 78.88,
+      "gold_usd": 888.76,
+      "gold_oz": 6226,
+      "other_reserves_sdr": -3.38
+    },
+    {
+      "date": "2019.08",
+      "foreign_exchange_sdr": 22707.64,
+      "imf_reserve_position_sdr": 61.73,
+      "sdr_sdr": 79.09,
+      "gold_usd": 954.5,
+      "gold_oz": 6245,
+      "other_reserves_sdr": -2.89
+    },
+    {
+      "date": "2019.09",
+      "foreign_exchange_sdr": 22683.32,
+      "imf_reserve_position_sdr": 61.73,
+      "sdr_sdr": 79.11,
+      "gold_usd": 930.45,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.65
+    },
+    {
+      "date": "2019.10",
+      "foreign_exchange_sdr": 22511.11,
+      "imf_reserve_position_sdr": 61.66,
+      "sdr_sdr": 79.14,
+      "gold_usd": 946.51,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.79
+    },
+    {
+      "date": "2019.11",
+      "foreign_exchange_sdr": 22547.82,
+      "imf_reserve_position_sdr": 61.66,
+      "sdr_sdr": 79.38,
+      "gold_usd": 914.69,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.17
+    },
+    {
+      "date": "2019.12",
+      "foreign_exchange_sdr": 22475.17,
+      "imf_reserve_position_sdr": 61.06,
+      "sdr_sdr": 80.46,
+      "gold_usd": 954.06,
+      "gold_oz": 6264,
+      "other_reserves_sdr": 0.24
+    },
+    {
+      "date": "2020.01",
+      "foreign_exchange_sdr": 22626.05,
+      "imf_reserve_position_sdr": 60.82,
+      "sdr_sdr": 80.58,
+      "gold_usd": 992.4,
+      "gold_oz": 6264,
+      "other_reserves_sdr": 0.08
+    },
+    {
+      "date": "2020.02",
+      "foreign_exchange_sdr": 22622.59,
+      "imf_reserve_position_sdr": 59.13,
+      "sdr_sdr": 80.73,
+      "gold_usd": 1008.47,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.73
+    },
+    {
+      "date": "2020.03",
+      "foreign_exchange_sdr": 22425.53,
+      "imf_reserve_position_sdr": 59.13,
+      "sdr_sdr": 80.74,
+      "gold_usd": 1007.9,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.74
+    },
+    {
+      "date": "2020.04",
+      "foreign_exchange_sdr": 22624.81,
+      "imf_reserve_position_sdr": 66.13,
+      "sdr_sdr": 79.13,
+      "gold_usd": 1066.66,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.25
+    },
+    {
+      "date": "2020.05",
+      "foreign_exchange_sdr": 22606.78,
+      "imf_reserve_position_sdr": 66.13,
+      "sdr_sdr": 79.26,
+      "gold_usd": 1082.92,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.37
+    },
+    {
+      "date": "2020.06",
+      "foreign_exchange_sdr": 22623.67,
+      "imf_reserve_position_sdr": 69.86,
+      "sdr_sdr": 79.63,
+      "gold_usd": 1107.6,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.37
+    },
+    {
+      "date": "2020.07",
+      "foreign_exchange_sdr": 22322.99,
+      "imf_reserve_position_sdr": 69.86,
+      "sdr_sdr": 79.74,
+      "gold_usd": 1230.88,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.8
+    },
+    {
+      "date": "2020.08",
+      "foreign_exchange_sdr": 22303.06,
+      "imf_reserve_position_sdr": 69.17,
+      "sdr_sdr": 79.77,
+      "gold_usd": 1226.15,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.91
+    },
+    {
+      "date": "2020.09",
+      "foreign_exchange_sdr": 22326.08,
+      "imf_reserve_position_sdr": 68.75,
+      "sdr_sdr": 79.34,
+      "gold_usd": 1182.02,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.83
+    },
+    {
+      "date": "2020.10",
+      "foreign_exchange_sdr": 22158.5,
+      "imf_reserve_position_sdr": 68.74,
+      "sdr_sdr": 79.38,
+      "gold_usd": 1178.86,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.48
+    },
+    {
+      "date": "2020.11",
+      "foreign_exchange_sdr": 22225.75,
+      "imf_reserve_position_sdr": 68.74,
+      "sdr_sdr": 79.47,
+      "gold_usd": 1104.12,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.3
+    },
+    {
+      "date": "2020.12",
+      "foreign_exchange_sdr": 22332.79,
+      "imf_reserve_position_sdr": 74.74,
+      "sdr_sdr": 79.81,
+      "gold_usd": 1182.46,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.46
+    },
+    {
+      "date": "2021.01",
+      "foreign_exchange_sdr": 22283.92,
+      "imf_reserve_position_sdr": 74.74,
+      "sdr_sdr": 79.88,
+      "gold_usd": 1167.55,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.77
+    },
+    {
+      "date": "2021.02",
+      "foreign_exchange_sdr": 22268.17,
+      "imf_reserve_position_sdr": 74.7,
+      "sdr_sdr": 79.9,
+      "gold_usd": 1091.78,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.83
+    },
+    {
+      "date": "2021.03",
+      "foreign_exchange_sdr": 22368.14,
+      "imf_reserve_position_sdr": 72.49,
+      "sdr_sdr": 79.97,
+      "gold_usd": 1059.33,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.34
+    },
+    {
+      "date": "2021.04",
+      "foreign_exchange_sdr": 22271.65,
+      "imf_reserve_position_sdr": 72.49,
+      "sdr_sdr": 79.55,
+      "gold_usd": 1107.32,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.36
+    },
+    {
+      "date": "2021.05",
+      "foreign_exchange_sdr": 22301.35,
+      "imf_reserve_position_sdr": 72.49,
+      "sdr_sdr": 79.63,
+      "gold_usd": 1190.2,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.26
+    },
+    {
+      "date": "2021.06",
+      "foreign_exchange_sdr": 22531.95,
+      "imf_reserve_position_sdr": 72.24,
+      "sdr_sdr": 79.99,
+      "gold_usd": 1104.5,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.94
+    },
+    {
+      "date": "2021.07",
+      "foreign_exchange_sdr": 22648.06,
+      "imf_reserve_position_sdr": 72.24,
+      "sdr_sdr": 80.11,
+      "gold_usd": 1143.72,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.95
+    },
+    {
+      "date": "2021.08",
+      "foreign_exchange_sdr": 22693.36,
+      "imf_reserve_position_sdr": 72.19,
+      "sdr_sdr": 371.52,
+      "gold_usd": 1136.89,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.86
+    },
+    {
+      "date": "2021.09",
+      "foreign_exchange_sdr": 22717.66,
+      "imf_reserve_position_sdr": 71.69,
+      "sdr_sdr": 378.59,
+      "gold_usd": 1091.75,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.58
+    },
+    {
+      "date": "2021.10",
+      "foreign_exchange_sdr": 22733.22,
+      "imf_reserve_position_sdr": 74.37,
+      "sdr_sdr": 378.67,
+      "gold_usd": 1108.26,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.35
+    },
+    {
+      "date": "2021.11",
+      "foreign_exchange_sdr": 23003.97,
+      "imf_reserve_position_sdr": 76.37,
+      "sdr_sdr": 378.76,
+      "gold_usd": 1130.34,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.76
+    },
+    {
+      "date": "2021.12",
+      "foreign_exchange_sdr": 23222.21,
+      "imf_reserve_position_sdr": 76.37,
+      "sdr_sdr": 379.15,
+      "gold_usd": 1131.25,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.98
+    },
+    {
+      "date": "2022.01",
+      "foreign_exchange_sdr": 23147.52,
+      "imf_reserve_position_sdr": 76.37,
+      "sdr_sdr": 384.46,
+      "gold_usd": 1124.61,
+      "gold_oz": 6264,
+      "other_reserves_sdr": 0.07
+    },
+    {
+      "date": "2022.02",
+      "foreign_exchange_sdr": 23040.44,
+      "imf_reserve_position_sdr": 76.33,
+      "sdr_sdr": 384.49,
+      "gold_usd": 1196.4,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.52
+    },
+    {
+      "date": "2022.03",
+      "foreign_exchange_sdr": 23061.31,
+      "imf_reserve_position_sdr": 75.75,
+      "sdr_sdr": 384.55,
+      "gold_usd": 1216.63,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.94
+    },
+    {
+      "date": "2022.04",
+      "foreign_exchange_sdr": 23206.97,
+      "imf_reserve_position_sdr": 74.75,
+      "sdr_sdr": 388.83,
+      "gold_usd": 1197.31,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -4.27
+    },
+    {
+      "date": "2022.05",
+      "foreign_exchange_sdr": 23173.88,
+      "imf_reserve_position_sdr": 75.02,
+      "sdr_sdr": 388.96,
+      "gold_usd": 1151.83,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -1.25
+    },
+    {
+      "date": "2022.06",
+      "foreign_exchange_sdr": 23130.86,
+      "imf_reserve_position_sdr": 75.03,
+      "sdr_sdr": 391.28,
+      "gold_usd": 1138.23,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.14
+    },
+    {
+      "date": "2022.07",
+      "foreign_exchange_sdr": 23451.75,
+      "imf_reserve_position_sdr": 76.4,
+      "sdr_sdr": 391.44,
+      "gold_usd": 1098.39,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -2.59
+    },
+    {
+      "date": "2022.08",
+      "foreign_exchange_sdr": 23474.81,
+      "imf_reserve_position_sdr": 78.14,
+      "sdr_sdr": 394.15,
+      "gold_usd": 1074.9,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -0.55
+    },
+    {
+      "date": "2022.09",
+      "foreign_exchange_sdr": 23665.93,
+      "imf_reserve_position_sdr": 77.79,
+      "sdr_sdr": 394.21,
+      "gold_usd": 1047.24,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -4.0
+    },
+    {
+      "date": "2022.10",
+      "foreign_exchange_sdr": 23785.88,
+      "imf_reserve_position_sdr": 81.44,
+      "sdr_sdr": 392.27,
+      "gold_usd": 1026.73,
+      "gold_oz": 6264,
+      "other_reserves_sdr": -3.71
+    },
+    {
+      "date": "2022.11",
+      "foreign_exchange_sdr": 23709.99,
+      "imf_reserve_position_sdr": 81.44,
+      "sdr_sdr": 384.17,
+      "gold_usd": 1116.5,
+      "gold_oz": 6367,
+      "other_reserves_sdr": -3.24
+    },
+    {
+      "date": "2022.12",
+      "foreign_exchange_sdr": 23501.56,
+      "imf_reserve_position_sdr": 81.44,
+      "sdr_sdr": 384.41,
+      "gold_usd": 1172.35,
+      "gold_oz": 6464,
+      "other_reserves_sdr": -2.97
+    },
+    {
+      "date": "2023.01",
+      "foreign_exchange_sdr": 23615.4,
+      "imf_reserve_position_sdr": 81.44,
+      "sdr_sdr": 385.41,
+      "gold_usd": 1252.83,
+      "gold_oz": 6512,
+      "other_reserves_sdr": -1.51
+    },
+    {
+      "date": "2023.02",
+      "foreign_exchange_sdr": 23579.08,
+      "imf_reserve_position_sdr": 81.44,
+      "sdr_sdr": 388.49,
+      "gold_usd": 1202.83,
+      "gold_oz": 6592,
+      "other_reserves_sdr": 0.24
+    },
+    {
+      "date": "2023.03",
+      "foreign_exchange_sdr": 23667.85,
+      "imf_reserve_position_sdr": 81.14,
+      "sdr_sdr": 390.04,
+      "gold_usd": 1316.53,
+      "gold_oz": 6650,
+      "other_reserves_sdr": 0.68
+    },
+    {
+      "date": "2023.04",
+      "foreign_exchange_sdr": 23791.73,
+      "imf_reserve_position_sdr": 81.16,
+      "sdr_sdr": 390.06,
+      "gold_usd": 1323.53,
+      "gold_oz": 6676,
+      "other_reserves_sdr": 1.4
+    },
+    {
+      "date": "2023.05",
+      "foreign_exchange_sdr": 23929.14,
+      "imf_reserve_position_sdr": 81.15,
+      "sdr_sdr": 391.51,
+      "gold_usd": 1321.52,
+      "gold_oz": 6727,
+      "other_reserves_sdr": 3.15
+    },
+    {
+      "date": "2023.06",
+      "foreign_exchange_sdr": 24006.17,
+      "imf_reserve_position_sdr": 72.94,
+      "sdr_sdr": 391.81,
+      "gold_usd": 1299.34,
+      "gold_oz": 6795,
+      "other_reserves_sdr": 0.79
+    },
+    {
+      "date": "2023.07",
+      "foreign_exchange_sdr": 23860.18,
+      "imf_reserve_position_sdr": 60.47,
+      "sdr_sdr": 393.71,
+      "gold_usd": 1353.6,
+      "gold_oz": 6869,
+      "other_reserves_sdr": 0.75
+    },
+    {
+      "date": "2023.08",
+      "foreign_exchange_sdr": 23761.19,
+      "imf_reserve_position_sdr": 72.91,
+      "sdr_sdr": 397.97,
+      "gold_usd": 1352.24,
+      "gold_oz": 6962,
+      "other_reserves_sdr": -0.5
+    },
+    {
+      "date": "2023.09",
+      "foreign_exchange_sdr": 23689.17,
+      "imf_reserve_position_sdr": 72.91,
+      "sdr_sdr": 398.03,
+      "gold_usd": 1317.88,
+      "gold_oz": 7046,
+      "other_reserves_sdr": -2.45
+    },
+    {
+      "date": "2023.10",
+      "foreign_exchange_sdr": 23598.95,
+      "imf_reserve_position_sdr": 72.91,
+      "sdr_sdr": 398.09,
+      "gold_usd": 1421.71,
+      "gold_oz": 7120,
+      "other_reserves_sdr": -1.68
+    },
+    {
+      "date": "2023.11",
+      "foreign_exchange_sdr": 23789.41,
+      "imf_reserve_position_sdr": 72.65,
+      "sdr_sdr": 399.28,
+      "gold_usd": 1457.01,
+      "gold_oz": 7158,
+      "other_reserves_sdr": -0.14
+    },
+    {
+      "date": "2023.12",
+      "foreign_exchange_sdr": 24133.94,
+      "imf_reserve_position_sdr": 72.65,
+      "sdr_sdr": 399.47,
+      "gold_usd": 1482.26,
+      "gold_oz": 7187,
+      "other_reserves_sdr": 1.08
+    },
+    {
+      "date": "2024.01",
+      "foreign_exchange_sdr": 24207.52,
+      "imf_reserve_position_sdr": 74.36,
+      "sdr_sdr": 400.76,
+      "gold_usd": 1482.29,
+      "gold_oz": 7219,
+      "other_reserves_sdr": 2.53
+    },
+    {
+      "date": "2024.02",
+      "foreign_exchange_sdr": 24298.76,
+      "imf_reserve_position_sdr": 74.36,
+      "sdr_sdr": 402.01,
+      "gold_usd": 1486.44,
+      "gold_oz": 7258,
+      "other_reserves_sdr": -1.46
+    },
+    {
+      "date": "2024.03",
+      "foreign_exchange_sdr": 24513.12,
+      "imf_reserve_position_sdr": 74.36,
+      "sdr_sdr": 401.82,
+      "gold_usd": 1610.69,
+      "gold_oz": 7274,
+      "other_reserves_sdr": -2.55
+    },
+    {
+      "date": "2024.04",
+      "foreign_exchange_sdr": 24286.82,
+      "imf_reserve_position_sdr": 74.12,
+      "sdr_sdr": 402.68,
+      "gold_usd": 1679.57,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -5.57
+    },
+    {
+      "date": "2024.05",
+      "foreign_exchange_sdr": 24419.67,
+      "imf_reserve_position_sdr": 74.13,
+      "sdr_sdr": 404.02,
+      "gold_usd": 1709.6,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -6.76
+    },
+    {
+      "date": "2024.06",
+      "foreign_exchange_sdr": 24498.2,
+      "imf_reserve_position_sdr": 74.13,
+      "sdr_sdr": 404.18,
+      "gold_usd": 1696.97,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -8.48
+    },
+    {
+      "date": "2024.07",
+      "foreign_exchange_sdr": 24513.09,
+      "imf_reserve_position_sdr": 74.13,
+      "sdr_sdr": 403.86,
+      "gold_usd": 1766.42,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -8.84
+    },
+    {
+      "date": "2024.08",
+      "foreign_exchange_sdr": 24418.55,
+      "imf_reserve_position_sdr": 74.13,
+      "sdr_sdr": 406.37,
+      "gold_usd": 1829.8,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -6.7
+    },
+    {
+      "date": "2024.09",
+      "foreign_exchange_sdr": 24450.28,
+      "imf_reserve_position_sdr": 74.82,
+      "sdr_sdr": 404.49,
+      "gold_usd": 1914.69,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -7.71
+    },
+    {
+      "date": "2024.10",
+      "foreign_exchange_sdr": 24489.08,
+      "imf_reserve_position_sdr": 74.83,
+      "sdr_sdr": 404.47,
+      "gold_usd": 1990.55,
+      "gold_oz": 7280,
+      "other_reserves_sdr": -10.5
+    },
+    {
+      "date": "2024.11",
+      "foreign_exchange_sdr": 24856.07,
+      "imf_reserve_position_sdr": 74.83,
+      "sdr_sdr": 405.68,
+      "gold_usd": 1934.31,
+      "gold_oz": 7296,
+      "other_reserves_sdr": -5.97
+    },
+    {
+      "date": "2024.12",
+      "foreign_exchange_sdr": 24555.42,
+      "imf_reserve_position_sdr": 74.82,
+      "sdr_sdr": 404.01,
+      "gold_usd": 1913.37,
+      "gold_oz": 7329,
+      "other_reserves_sdr": -4.46
+    },
+    {
+      "date": "2025.01",
+      "foreign_exchange_sdr": 24612.47,
+      "imf_reserve_position_sdr": 77.07,
+      "sdr_sdr": 404.29,
+      "gold_usd": 2065.34,
+      "gold_oz": 7345,
+      "other_reserves_sdr": -2.48
+    },
+    {
+      "date": "2025.02",
+      "foreign_exchange_sdr": 24654.06,
+      "imf_reserve_position_sdr": 77.06,
+      "sdr_sdr": 405.48,
+      "gold_usd": 2086.43,
+      "gold_oz": 7361,
+      "other_reserves_sdr": -3.61
+    },
+    {
+      "date": "2025.03",
+      "foreign_exchange_sdr": 24389.83,
+      "imf_reserve_position_sdr": 76.1,
+      "sdr_sdr": 405.53,
+      "gold_usd": 2295.94,
+      "gold_oz": 7370,
+      "other_reserves_sdr": -2.71
+    },
+    {
+      "date": "2025.04",
+      "foreign_exchange_sdr": 24199.01,
+      "imf_reserve_position_sdr": 82.48,
+      "sdr_sdr": 405.95,
+      "gold_usd": 2435.85,
+      "gold_oz": 7377,
+      "other_reserves_sdr": -1.16
+    },
+    {
+      "date": "2025.05",
+      "foreign_exchange_sdr": 24214.89,
+      "imf_reserve_position_sdr": 83.31,
+      "sdr_sdr": 407.0,
+      "gold_usd": 2419.88,
+      "gold_oz": 7383,
+      "other_reserves_sdr": -2.21
+    },
+    {
+      "date": "2025.06",
+      "foreign_exchange_sdr": 24144.2,
+      "imf_reserve_position_sdr": 82.14,
+      "sdr_sdr": 407.06,
+      "gold_usd": 2429.31,
+      "gold_oz": 7390,
+      "other_reserves_sdr": -3.55
+    },
+    {
+      "date": "2025.07",
+      "foreign_exchange_sdr": 24298.54,
+      "imf_reserve_position_sdr": 80.65,
+      "sdr_sdr": 407.92,
+      "gold_usd": 2439.85,
+      "gold_oz": 7396,
+      "other_reserves_sdr": -2.56
+    },
+    {
+      "date": "2025.08",
+      "foreign_exchange_sdr": 24273.35,
+      "imf_reserve_position_sdr": 82.86,
+      "sdr_sdr": 409.26,
+      "gold_usd": 2538.43,
+      "gold_oz": 7402,
+      "other_reserves_sdr": -1.47
+    },
+    {
+      "date": "2025.09",
+      "foreign_exchange_sdr": 24352.47,
+      "imf_reserve_position_sdr": 81.91,
+      "sdr_sdr": 409.3,
+      "gold_usd": 2832.91,
+      "gold_oz": 7406,
+      "other_reserves_sdr": -2.57
+    },
+    {
+      "date": "2025.10",
+      "foreign_exchange_sdr": 24612.45,
+      "imf_reserve_position_sdr": 81.4,
+      "sdr_sdr": 409.03,
+      "gold_usd": 2972.09,
+      "gold_oz": 7409,
+      "other_reserves_sdr": -2.41
+    },
+    {
+      "date": "2025.11",
+      "foreign_exchange_sdr": 24631.64,
+      "imf_reserve_position_sdr": 81.4,
+      "sdr_sdr": 410.11,
+      "gold_usd": 3106.47,
+      "gold_oz": 7412,
+      "other_reserves_sdr": -1.05
+    },
+    {
+      "date": "2025.12",
+      "foreign_exchange_sdr": 24518.89,
+      "imf_reserve_position_sdr": 81.63,
+      "sdr_sdr": 407.62,
+      "gold_usd": 3194.5,
+      "gold_oz": 7415,
+      "other_reserves_sdr": -0.11
+    },
+    {
+      "date": "2026.01",
+      "foreign_exchange_sdr": 24597.67,
+      "imf_reserve_position_sdr": 81.04,
+      "sdr_sdr": 406.94,
+      "gold_usd": 3695.82,
+      "gold_oz": 7419,
+      "other_reserves_sdr": 1.37
+    },
+    {
+      "date": "2026.02",
+      "foreign_exchange_sdr": 24933.77,
+      "imf_reserve_position_sdr": 81.03,
+      "sdr_sdr": 408.02,
+      "gold_usd": 3875.88,
+      "gold_oz": 7422,
+      "other_reserves_sdr": 0.47
+    },
+    {
+      "date": "2026.03",
+      "foreign_exchange_sdr": 24639.84,
+      "imf_reserve_position_sdr": 80.38,
+      "sdr_sdr": 408.02,
+      "gold_usd": 3427.63,
+      "gold_oz": 7438,
+      "other_reserves_sdr": -0.07
+    },
+    {
+      "date": "2026.04",
+      "foreign_exchange_sdr": 24857.91,
+      "imf_reserve_position_sdr": 79.72,
+      "sdr_sdr": 408.4,
+      "gold_usd": 3441.72,
+      "gold_oz": 7464,
+      "other_reserves_sdr": 0.2
+    },
+    {
+      "date": "2026.05",
+      "foreign_exchange_sdr": 25148.72,
+      "imf_reserve_position_sdr": 81.72,
+      "sdr_sdr": 409.38,
+      "gold_usd": 3407.52,
+      "gold_oz": 7496,
+      "other_reserves_sdr": 2.75
+    }
+  ],
+  "last_updated": "2026-06-30"
 }
