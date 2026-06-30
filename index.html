@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国官方黄金储备变化趋势 | Gold Reserve Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        header h1 {
+            font-size: 2.2em;
+            background: linear-gradient(90deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        header p { color: #aaa; font-size: 0.95em; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,215,0,0.15);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .label { font-size: 0.85em; color: #aaa; margin-bottom: 6px; }
+        .stat-card .value { font-size: 1.8em; font-weight: 700; color: #ffd700; }
+        .stat-card .unit { font-size: 0.75em; color: #888; margin-top: 4px; }
+        .chart-section {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .chart-section h2 {
+            font-size: 1.3em;
+            color: #ffd700;
+            margin-bottom: 16px;
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+        .table-section {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+        .table-section h2 { font-size: 1.3em; color: #ffd700; margin-bottom: 16px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88em;
+        }
+        th {
+            background: rgba(255,215,0,0.12);
+            color: #ffd700;
+            padding: 10px 12px;
+            text-align: right;
+            border-bottom: 2px solid rgba(255,215,0,0.2);
+            white-space: nowrap;
+        }
+        th:first-child { text-align: left; }
+        td {
+            padding: 8px 12px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        td:first-child { text-align: left; color: #ccc; font-weight: 500; }
+        tr:hover td { background: rgba(255,215,0,0.04); }
+        .year-filter {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .year-btn {
+            padding: 6px 14px;
+            border: 1px solid rgba(255,215,0,0.3);
+            border-radius: 20px;
+            background: transparent;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+        .year-btn:hover, .year-btn.active {
+            background: rgba(255,215,0,0.2);
+            color: #ffd700;
+            border-color: #ffd700;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.85em;
+        }
+        footer a { color: #ffd700; text-decoration: none; }
+        .updated { color: #888; font-size: 0.85em; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🥇 中国官方黄金储备</h1>
+            <p id="headerSubtitle">数据来源：<a href="https://www.safe.gov.cn/safe/whcb/index.html" style="color:#ffd700">国家外汇管理局</a></p>
+        </header>
+
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <div class="chart-section">
+            <h2>黄金储备价值变化（亿美元）</h2>
+            <div class="chart-container"><canvas id="goldUsdChart"></canvas></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>黄金储备数量变化（万盎司）</h2>
+            <div class="chart-container"><canvas id="goldOzChart"></canvas></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>黄金隐含单价（美元/盎司）</h2>
+            <div class="chart-container"><canvas id="goldPriceChart"></canvas></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>全部储备资产趋势</h2>
+            <div class="chart-container"><canvas id="allReservesChart"></canvas></div>
+        </div>
+
+        <div class="table-section">
+            <h2>详细数据表</h2>
+            <div class="year-filter" id="yearFilter"></div>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>月份</th>
+                        <th>外汇储备<br>(亿SDR)</th>
+                        <th>基金储备头寸<br>(亿SDR)</th>
+                        <th>特别提款权<br>(亿SDR)</th>
+                        <th>黄金<br>(亿美元)</th>
+                        <th>黄金<br>(万盎司)</th>
+                        <th>其他储备<br>(亿SDR)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>数据自动更新 · 每月15日检查最新数据 · <a href="https://github.com" id="repoLink">GitHub 仓库</a></p>
+            <p class="updated" id="lastUpdated"></p>
+        </footer>
+    </div>
+
+    <script>
+    // Data will be loaded from reserves.json
+    let allData = [];
+
+    async function loadData() {
+        try {
+            const resp = await fetch('data/reserves.json');
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            const json = await resp.json();
+            allData = json.data;
+            document.getElementById('lastUpdated').textContent = '最后更新：' + json.last_updated;
+            render();
+        } catch (e) {
+            console.error('Failed to load data:', e);
+            document.querySelector('.container').innerHTML =
+                '<div style="text-align:center;padding:80px 20px;color:#ff6b6b">' +
+                '<h2>数据加载失败</h2><p style="color:#aaa;margin-top:12px">' + e.message + '</p></div>';
+        }
+    }
+
+    function render() {
+        if (!allData || allData.length === 0) {
+            document.querySelector('.container').innerHTML =
+                '<div style="text-align:center;padding:80px 20px;color:#ff6b6b">' +
+                '<h2>暂无数据</h2><p style="color:#aaa;margin-top:12px">请稍后再试</p></div>';
+            return;
+        }
+
+        // Update header subtitle with dynamic year range
+        const years = allData.map(d => d.date.split('.')[0]);
+        const yearMin = Math.min(...years);
+        const yearMax = Math.max(...years);
+        document.getElementById('headerSubtitle').innerHTML =
+            `数据来源：<a href="https://www.safe.gov.cn/safe/whcb/index.html" style="color:#ffd700">国家外汇管理局</a> · ${yearMin}-${yearMax}年月度数据`;
+
+        renderStats();
+        renderGoldUsdChart();
+        renderGoldOzChart();
+        renderGoldPriceChart();
+        renderAllReservesChart();
+        renderTable();
+        renderYearFilter();
+    }
+
+    function renderStats() {
+        const latest = allData[allData.length - 1];
+        const earliest = allData[0];
+        const goldUsdChangeNum = (latest.gold_usd - earliest.gold_usd) / earliest.gold_usd * 100;
+        const goldOzChangeNum = latest.gold_oz - earliest.gold_oz;
+        const startYear = earliest.date.split('.')[0];
+        const fmtSign = (v) => v >= 0 ? '+' : '';
+        const impliedPrice = latest.gold_oz > 0 ? Math.round(latest.gold_usd * 1e8 / (latest.gold_oz * 1e4)) : 'N/A';
+
+        const stats = [
+            { label: '最新月份', value: latest.date, unit: '' },
+            { label: '黄金价值', value: latest.gold_usd.toLocaleString(), unit: '亿美元' },
+            { label: '黄金数量', value: latest.gold_oz.toLocaleString(), unit: '万盎司' },
+            { label: `${startYear}至今价值变化`, value: fmtSign(goldUsdChangeNum) + goldUsdChangeNum.toFixed(1) + '%', unit: '' },
+            { label: `${startYear}至今数量变化`, value: fmtSign(goldOzChangeNum) + goldOzChangeNum, unit: '万盎司' },
+            { label: '隐含单价', value: impliedPrice, unit: '美元/盎司' },
+        ];
+        document.getElementById('statsGrid').innerHTML = stats.map(s =>
+            `<div class="stat-card"><div class="label">${s.label}</div><div class="value">${s.value}</div><div class="unit">${s.unit}</div></div>`
+        ).join('');
+    }
+
+    const chartOpts = () => ({
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+            legend: { labels: { color: '#ccc', font: { size: 12 } } },
+            tooltip: {
+                backgroundColor: 'rgba(0,0,0,0.85)',
+                titleColor: '#ffd700',
+                bodyColor: '#eee',
+                borderColor: '#ffd700',
+                borderWidth: 1,
+            }
+        },
+        scales: {
+            x: {
+                ticks: { color: '#888', maxRotation: 45, font: { size: 10 } },
+                grid: { color: 'rgba(255,255,255,0.04)' }
+            },
+            y: {
+                ticks: { color: '#888' },
+                grid: { color: 'rgba(255,255,255,0.06)' }
+            }
+        }
+    });
+
+    const labels = () => allData.map(d => d.date);
+
+    function renderGoldUsdChart() {
+        new Chart(document.getElementById('goldUsdChart'), {
+            type: 'line',
+            data: {
+                labels: labels(),
+                datasets: [{
+                    label: '黄金（亿美元）',
+                    data: allData.map(d => d.gold_usd),
+                    borderColor: '#ffd700',
+                    backgroundColor: 'rgba(255,215,0,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                    pointHoverRadius: 5,
+                    borderWidth: 2,
+                }]
+            },
+            options: chartOpts()
+        });
+    }
+
+    function renderGoldOzChart() {
+        new Chart(document.getElementById('goldOzChart'), {
+            type: 'line',
+            data: {
+                labels: labels(),
+                datasets: [{
+                    label: '黄金（万盎司）',
+                    data: allData.map(d => d.gold_oz),
+                    borderColor: '#ff8c00',
+                    backgroundColor: 'rgba(255,140,0,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                    pointHoverRadius: 5,
+                    borderWidth: 2,
+                }]
+            },
+            options: chartOpts()
+        });
+    }
+
+    function renderGoldPriceChart() {
+        // Implied gold price = gold_usd (亿美元) * 1e8 / (gold_oz (万盎司) * 1e4) = USD/oz
+        const validData = allData.filter(d => d.gold_oz > 0);
+        new Chart(document.getElementById('goldPriceChart'), {
+            type: 'line',
+            data: {
+                labels: validData.map(d => d.date),
+                datasets: [{
+                    label: '隐含单价（美元/盎司）',
+                    data: validData.map(d =>
+                        Math.round(d.gold_usd * 1e8 / (d.gold_oz * 1e4) * 100) / 100
+                    ),
+                    borderColor: '#00bcd4',
+                    backgroundColor: 'rgba(0,188,212,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                    pointHoverRadius: 5,
+                    borderWidth: 2,
+                }]
+            },
+            options: chartOpts()
+        });
+    }
+
+    function renderAllReservesChart() {
+        new Chart(document.getElementById('allReservesChart'), {
+            type: 'line',
+            data: {
+                labels: labels(),
+                datasets: [
+                    {
+                        label: '外汇储备（亿SDR）',
+                        data: allData.map(d => d.foreign_exchange_sdr),
+                        borderColor: '#4caf50',
+                        backgroundColor: 'rgba(76,175,80,0.05)',
+                        tension: 0.3, pointRadius: 1, borderWidth: 2, yAxisID: 'y'
+                    },
+                    {
+                        label: '黄金（亿美元）',
+                        data: allData.map(d => d.gold_usd),
+                        borderColor: '#ffd700',
+                        backgroundColor: 'rgba(255,215,0,0.05)',
+                        tension: 0.3, pointRadius: 1, borderWidth: 2, yAxisID: 'y1'
+                    },
+                    {
+                        label: 'SDR（亿SDR）',
+                        data: allData.map(d => d.sdr_sdr),
+                        borderColor: '#2196f3',
+                        tension: 0.3, pointRadius: 1, borderWidth: 1.5, yAxisID: 'y1'
+                    },
+                    {
+                        label: '基金储备头寸（亿SDR）',
+                        data: allData.map(d => d.imf_reserve_position_sdr),
+                        borderColor: '#9c27b0',
+                        tension: 0.3, pointRadius: 1, borderWidth: 1.5, yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { labels: { color: '#ccc', font: { size: 11 } } },
+                    tooltip: { backgroundColor: 'rgba(0,0,0,0.85)', titleColor: '#ffd700', bodyColor: '#eee' }
+                },
+                scales: {
+                    x: { ticks: { color: '#888', maxRotation: 45, font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+                    y: { type: 'linear', position: 'left', title: { display: true, text: '亿SDR', color: '#888' }, ticks: { color: '#888' }, grid: { color: 'rgba(255,255,255,0.06)' } },
+                    y1: { type: 'linear', position: 'right', title: { display: true, text: '亿美元 / 亿SDR', color: '#888' }, ticks: { color: '#888' }, grid: { display: false } }
+                }
+            }
+        });
+    }
+
+    function renderYearFilter() {
+        const years = [...new Set(allData.map(d => d.date.split('.')[0]))];
+        const filter = document.getElementById('yearFilter');
+        filter.innerHTML = '<button class="year-btn active" data-year="all">全部</button>' +
+            years.map(y => `<button class="year-btn" data-year="${y}">${y}</button>`).join('');
+        filter.querySelectorAll('.year-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                filter.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderTable(btn.dataset.year);
+            });
+        });
+    }
+
+    function renderTable(year = 'all') {
+        const filtered = year === 'all' ? allData : allData.filter(d => d.date.startsWith(year));
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = filtered.slice().reverse().map(d => `
+            <tr>
+                <td>${d.date}</td>
+                <td>${d.foreign_exchange_sdr.toLocaleString()}</td>
+                <td>${d.imf_reserve_position_sdr}</td>
+                <td>${d.sdr_sdr}</td>
+                <td style="color:#ffd700;font-weight:600">${d.gold_usd.toLocaleString()}</td>
+                <td style="color:#ff8c00">${d.gold_oz.toLocaleString()}</td>
+                <td>${d.other_reserves_sdr}</td>
+            </tr>
+        `).join('');
+    }
+
+    loadData();
+    </script>
+</body>
+</html>
